@@ -3,7 +3,7 @@ pipeline{
     stages{
        stage('1.checkout'){
           steps{
-             gir url:'https://github.com/PunnaPriyanka/docker', branch:'main'
+             git url:'https://github.com/PunnaPriyanka/docker', branch:'main'
          }
     }
        stage('2.Build Image'){

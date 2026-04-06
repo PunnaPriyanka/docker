@@ -8,7 +8,7 @@ pipeline{
     }
        stage('2.Build Image'){
           steps{
-            bat:'docker build -t Mywebsite'
+            bat 'docker build -t Mywebsite'
          }
     }
       stage('3.Stop/Remove old Container'){
